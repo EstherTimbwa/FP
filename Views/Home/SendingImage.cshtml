@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form asp-action= "SendingImage" enctype="multipart/form-data">
+        <p> Choose an image</p>
+        <input type="file" name="file"/>
+        <br />
+        <input type="submit" />
+        <img src="/file.jpg" width="200" />
+    </form>
+</div>
